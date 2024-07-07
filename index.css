@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.draggable {
+    width: 200px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: move;
+}
+
+#menu-content {
+    display: block;
+}
+
+.box2d {
+    display: inline-block;
+    background-color: red;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.minimized #menu-content {
+    display: none;
+}
+
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#canvas {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
